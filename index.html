@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find Friends support, account help, privacy policy, and terms of service.">
+  <title>Find Friends | Support</title>
+  <style>
+    :root {
+      --ink: #2f241d;
+      --muted: #6f655e;
+      --yellow: #f6c900;
+      --blue: #166b97;
+      --green: #397b58;
+      --line: #ddd6ce;
+      --paper: #fffdf8;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+    a { color: inherit; }
+    .hero {
+      background-color: #66531b;
+      background-image: url("assets/find-friends-city.png");
+      background-position: center;
+      background-size: cover;
+      color: var(--white);
+      min-height: 620px;
+      position: relative;
+    }
+    .hero::before {
+      background: rgba(35, 28, 14, 0.46);
+      content: "";
+      inset: 0;
+      pointer-events: none;
+      position: absolute;
+    }
+    .hero-content { margin: 0 auto; max-width: 1160px; min-height: 620px; padding: 24px; position: relative; }
+    .site-nav { align-items: center; display: flex; justify-content: space-between; }
+    .brand { align-items: center; color: var(--white); display: inline-flex; font-size: 18px; font-weight: 750; gap: 10px; text-decoration: none; }
+    .brand img { border-radius: 8px; display: block; height: 38px; width: 38px; }
+    .site-nav-links { display: flex; gap: 22px; }
+    .site-nav-links a { color: var(--white); font-size: 15px; text-decoration: none; }
+    .site-nav-links a:hover, .site-nav-links a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+    .hero-copy { bottom: 74px; max-width: 610px; position: absolute; }
+    h1 { font-size: 58px; letter-spacing: 0; line-height: 1.05; margin: 0; }
+    .hero-copy p { font-size: 21px; margin: 18px 0 0; max-width: 520px; }
+    .hero-note { font-size: 15px !important; margin-top: 28px !important; opacity: 0.94; }
+
+    main { margin: 0 auto; max-width: 1160px; padding: 76px 24px 84px; }
+    .eyebrow { color: var(--blue); font-size: 14px; font-weight: 750; margin: 0 0 9px; text-transform: uppercase; }
+    h2 { font-size: 34px; letter-spacing: 0; line-height: 1.15; margin: 0; }
+    .lead { color: var(--muted); font-size: 18px; margin: 14px 0 0; max-width: 620px; }
+    .support-grid { border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 40px; }
+    .support-item { border-bottom: 1px solid var(--line); min-height: 218px; padding: 28px 28px 30px 0; }
+    .support-item + .support-item { border-left: 1px solid var(--line); padding-left: 28px; }
+    h3 { font-size: 20px; letter-spacing: 0; margin: 0; }
+    .support-item p { color: var(--muted); margin: 10px 0 20px; }
+    .text-link { color: var(--blue); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .text-link:hover, .text-link:focus-visible { color: var(--green); }
+
+    .vip { border-bottom: 1px solid var(--line); display: grid; gap: 28px; grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr); padding: 56px 0; }
+    .vip p { color: var(--muted); font-size: 17px; margin: 14px 0 0; max-width: 670px; }
+    .vip-detail { align-self: center; border-left: 5px solid var(--yellow); padding-left: 20px; }
+    .vip-detail strong { display: block; font-size: 20px; }
+    .vip-detail span { color: var(--muted); display: block; margin-top: 4px; }
+
+    .legal { padding-top: 56px; }
+    .legal-links { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 28px; }
+    .legal-link { align-items: center; border: 1px solid var(--line); display: flex; justify-content: space-between; min-height: 82px; padding: 18px 20px; text-decoration: none; }
+    .legal-link:hover, .legal-link:focus-visible { border-color: var(--blue); color: var(--blue); }
+    .legal-link strong { font-size: 18px; }
+    .legal-link span { color: var(--muted); font-size: 15px; }
+
+    footer { background: #2f241d; color: #f5eee5; }
+    .footer-content { display: flex; font-size: 14px; gap: 24px; justify-content: space-between; margin: 0 auto; max-width: 1160px; padding: 25px 24px; }
+    .footer-content a { text-underline-offset: 3px; }
+
+    @media (max-width: 720px) {
+      .hero, .hero-content { min-height: 540px; }
+      .hero-content { padding: 18px 20px; }
+      .site-nav-links { gap: 15px; }
+      .site-nav-links a { font-size: 14px; }
+      .hero-copy { bottom: 52px; left: 20px; right: 20px; }
+      h1 { font-size: 42px; }
+      .hero-copy p { font-size: 18px; }
+      main { padding: 56px 20px 64px; }
+      h2 { font-size: 29px; }
+      .support-grid, .legal-links { grid-template-columns: 1fr; }
+      .support-item { min-height: 0; padding: 25px 0; }
+      .support-item + .support-item { border-left: 0; padding-left: 0; }
+      .vip { gap: 24px; grid-template-columns: 1fr; padding: 46px 0; }
+      .footer-content { flex-direction: column; gap: 8px; padding: 22px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html"><img src="assets/find-friends-app-icon.png" alt="Find Friends app icon">Find Friends</a>
+        <div class="site-nav-links">
+          <a href="#support">Support</a>
+          <a href="#legal">Legal</a>
+        </div>
+      </nav>
+      <div class="hero-copy">
+        <h1>Find Friends</h1>
+        <p>Discover people around you, start a conversation, and make your profile your own.</p>
+        <p class="hero-note">Support, account help, and legal information.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="support" aria-labelledby="support-title">
+      <p class="eyebrow">Support</p>
+      <h2 id="support-title">The practical stuff, without the maze.</h2>
+      <p class="lead">For account, safety, subscription, or technical questions, our support inbox is the fastest way to reach us.</p>
+
+      <div class="support-grid">
+        <article class="support-item">
+          <h3>Contact support</h3>
+          <p>Tell us what happened and include the email address or username on your account when possible.</p>
+          <a class="text-link" href="mailto:gaoqi_1999@yahoo.com">Email support</a>
+        </article>
+        <article class="support-item">
+          <h3>Delete your account</h3>
+          <p>In the app, open <strong>Settings &gt; Delete Account</strong>. This permanently removes your account data.</p>
+        </article>
+        <article class="support-item">
+          <h3>Report a concern</h3>
+          <p>Use the report option on a profile or post to flag inappropriate content or behavior for review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vip" aria-labelledby="vip-title">
+      <div>
+        <p class="eyebrow">VIP</p>
+        <h2 id="vip-title">An optional upgrade, clearly explained.</h2>
+        <p>VIP includes a 3-day free trial, then costs US$9.99 per month. Billing is handled by Apple and renews automatically unless cancelled in your Apple Account settings.</p>
+      </div>
+      <div class="vip-detail">
+        <strong>3-day free trial</strong>
+        <span>US$9.99 per month afterward</span>
+      </div>
+    </section>
+
+    <section class="legal" id="legal" aria-labelledby="legal-title">
+      <p class="eyebrow">Legal</p>
+      <h2 id="legal-title">Your information and your rights.</h2>
+      <p class="lead">Read how Find Friends works, how information is used, and the terms that apply to the service.</p>
+      <div class="legal-links">
+        <a class="legal-link" href="tou.html"><strong>Terms of Service</strong><span>Read terms</span></a>
+        <a class="legal-link" href="pp.html"><strong>Privacy Policy</strong><span>Read policy</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <span>Find Friends is not affiliated with Snapchat, Instagram, or Kik.</span>
+      <a href="mailto:gaoqi_1999@yahoo.com">gaoqi_1999@yahoo.com</a>
+    </div>
+  </footer>
+</body>
+</html>
